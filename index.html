@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad Faraz - A Casual Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d4c199e17c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Student/Casual Coder</p>
+                <h1>Hi, I'm <span>Ahmad</span> <br>Faraz From Kashmir.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------------------- This is about me start------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Ahmad Faraz, a 17-year-old student and passionate programmer from Kashmir. With
+                        expertise in web development, Rust, C, Python, and more, I explore the art of coding to
+                        transform my creative ideas into functional websites. Join me in my coding journey and discover
+                        the wonders of technology. Let's code the future together!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul type="square">
+                            <li><span>Web Development</span><br> Web App Applications</li>
+                            <li><span>Backend Development</span><br>Golang Mastered</li>
+                            <li><span>App Development</span><br>Building Android Applications</li>
+                            <li><span>Languages</span><br>Python<br>C<br>Rust<br>And Many More...</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tabs" id="education">
+                        <ul>
+                            <li><span>Current</span><br> Pre-University Course</li>
+                            <li><span>2012 - 2022</span><br>Secondary School</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------------------------------This is about me end-------------------------------->
+    <!-- -------------------------------------------------------------This is Services Start-------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Expert web design, responsive development, and e-commerce solutions. Elevate your online presence
+                        with us - innovative, efficient, and client-focused. Contact now for a compelling digital
+                        experience.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>Backend Development</h2>
+                    <p>Elevate your digital projects with my specialized solo backend development services. From
+                        database architecture to server-side scripting, I craft seamless, secure, and scalable solutions
+                        tailored just for you. Let's bring your web applications to life.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-google-play"></i>
+                    <h2>App Design</h2>
+                    <p>As the sole developer, I offer bespoke app development services exclusively crafted for you. From
+                        concept to code, I bring your vision to life, ensuring a seamless user experience on both
+                        Android platforms. Let's create your unique app together.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------services-end ----------------------------------------- -->
+    <!-- ---------------------------portfolio-start ------------------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Reddit Video Maker</h3>
+                        <p>This is a Automatic Reddit Video Maker Bot made in Python and is Easy to use.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Discord Music Bot</h3>
+                        <p>This is a Disord Bot which can play music in Discord Free of Cost.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Discord Moderation Bot</h3>
+                        <p>This is a Discord bot which is used controls everything of a discord server.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+    <!-- ----------------- portfolio-end ---------------------  -->
+    <!-- ---------------------contact-start -----------------------  -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>ahmadfarazshorts@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+919906240661</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></i></a>
+                        <a href=""><i class="fa-solid fa-hat-cowboy"></i></a>
+                    </div>
+                    <!-- <a href="images/my-cv.pdf" class="btn btn2">Download Resume</a> -->
+                </div>
+                <div class="contact-right">
+                    <form name='submit-to-google-sheet'>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © AhmadFaraz</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwj09wtZ38Omhz3o0iUl1SS3eE9utwpDKcYv1tGidmAoL7DPJdwrz6VE_9CIWRPHdQV/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent successfully!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
